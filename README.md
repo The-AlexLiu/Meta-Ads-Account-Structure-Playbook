@@ -1,94 +1,402 @@
 # Meta Ads Account Structure Playbook 2026
 
-一个关于 Meta Ads 电商账户结构的经验作品集项目：从零冷启动，到形成可持续放量的广告结构。
+Meta Ads 电商账户结构：从冷启动到稳定放量的经验沉淀
 
-## 项目结论
+过去搭 Meta Ads 账户时，很容易把问题理解成“到底应该用 CBO 还是 ABO”“要不要拆兴趣”“Advantage+ Shopping 要不要单独开”“再营销预算应该放多少”。
 
-如果只用一句话概括当前 Meta Ads 的账户结构方向，我会这样说：
+这些问题都不是没有意义，但如果一开始就围绕这些按钮讨论，账户往往会越搭越复杂。
 
-> 最好的结构，不是把账户拆得足够细，而是让算法拿到足够集中的信号、足够多样的素材，以及足够清晰的业务目标。
+我后来更倾向于先问另一个问题：
 
-这也是 2026 年 Meta Ads 结构变化里最重要的一点。过去很多投手习惯用兴趣、Lookalike、再营销层级去搭一套复杂漏斗；但现在，更稳的做法往往是简化 campaign 和 ad set，把预算集中到少数功能明确的 campaign 里，再用素材角度和转化信号去驱动系统找人。
+> 这个账户有没有给 Meta 足够清晰、足够集中的学习信号？
 
-对独立站和 Shopify 电商来说，成熟账户通常不需要十几个 campaign。更健康的结构通常是：
+如果一个账户预算本来就不大，却拆了十几个 campaign、几十个 ad set，每个广告组都拿不到足够 Purchase，系统就很难稳定学习。最后看起来像是“素材不行”“受众不准”“Meta 抽风”，但底层问题可能只是结构把信号切碎了。
 
-| 模块 | 作用 | 常见预算占比 |
+所以我现在看 Meta Ads 结构，不会先问“这个账户有没有完整漏斗”，而是先看：
+
+- 预算有没有集中到真正能学习的地方；
+- Purchase、ATC、IC 这些事件有没有准确回传；
+- 素材是不是在测试不同购买动机，而不是同质化变体；
+- campaign 之间有没有明确分工；
+- 放量和测试有没有互相干扰；
+- 最后有没有回到 GMV、ROAS、CPA、AOV 和利润，而不是只看后台表面数据。
+
+这套方法主要服务 DTC 独立站、Shopify 电商、跨境电商和以 Purchase 为目标的 Meta Ads 账户。Lead Gen、App、B2B 高客单线索也能借鉴其中的结构思路，但预算比例和判断标准需要重新调整。
+
+* * *
+
+## 核心判断
+
+当前我更认可的 Meta Ads 账户结构，不是把账户拆得足够细，而是让算法拿到三个东西：
+
+1. 集中的转化信号；
+2. 足够多样的素材输入；
+3. 清晰且稳定的业务目标。
+
+落到电商账户里，成熟结构通常会变成：
+
+| 模块 | 主要任务 | 常见预算占比 |
 |---|---|---:|
 | 主力放量 Campaign | 承接已验证素材，追求 Purchase、ROAS、CPA 稳定 | 50%-70% |
 | 素材测试 Campaign | 持续验证新角度、新达人、新视频、新图片 | 20%-30% |
 | 再营销 Campaign | 承接高意向人群，适合流量充足或高客单账户 | 0%-10% |
 | 大促 Campaign | 黑五、圣诞、清仓、上新等节点，不干扰 evergreen 结构 | 单独预算 |
 
-小预算账户不应该一开始就搭满这四层。预算越小，结构越要简单。
+但这不是一上来就要搭满的结构。
 
-## 为什么做这个项目
+预算越小，结构越应该简单。新账户最怕的不是“不够高级”，而是还没拿到有效转化信号，就提前把预算拆散。
 
-很多 Meta Ads 账户不是输在某一个按钮没点对，而是输在结构本身没有给算法创造学习条件。
+* * *
 
-我在整理这个方法论时，重点关注三个问题：
+## 我会先看 5 个问题
 
-1. 新账户应该怎么冷启动，才不会一开始就把预算打散？
-2. 当素材开始出单后，怎么从单一测试 campaign 过渡到稳定放量结构？
-3. 成熟账户怎么持续测试新素材，而不是靠几条老素材撑到疲劳？
+### 1. 账户有没有正确回传 Purchase 信号
 
-这个项目试图把这些问题沉淀成一套可复用的工作流，而不是一份“最佳设置清单”。
+冷启动前，我不会先急着建 campaign，而是先看追踪是否可信。
 
-## 推荐阅读顺序
+因为 Meta Ads 的结构再漂亮，如果 Pixel 和 CAPI 回传不准，系统学习到的也是错误信号。尤其是新账户，本来数据就少，少量数据如果还不干净，后面很容易误判素材和受众。
 
-1. [完整方法论](docs/methodology.md)
-2. [冷启动检查清单](templates/cold-start-checklist.md)
-3. [账户结构画布](templates/account-structure-canvas.md)
-4. [素材测试记录模板](templates/creative-testing-tracker.csv)
-5. [参考来源](docs/sources.md)
+我会先检查：
 
-## 冷启动到成熟结构
-
-```mermaid
-flowchart LR
-  A["投放前准备<br/>Pixel / CAPI / Domain / Catalog / UTM"] --> B["冷启动<br/>1 个 Sales Campaign + Broad + 6-10 条素材"]
-  B --> C["识别初步 Winner<br/>用 CPA / ROAS / CTR / CVR 判断"]
-  C --> D["拆出测试机制<br/>Scale Campaign + Creative Testing Campaign"]
-  D --> E["成熟结构<br/>ASC/CBO 放量 + 持续素材测试 + 可选再营销"]
-  E --> F["维护与放量<br/>预算递增 / 大促独立 / 素材疲劳监控"]
-```
-
-## 适用场景
-
-- DTC 独立站
-- Shopify 电商
-- 跨境电商品牌
-- 以 Purchase、ROAS、CPA、GMV 为核心目标的 Meta Ads 账户
-- 需要从 0 到 1 冷启动，或从混乱账户结构迁移到稳定结构的投放场景
-
-## 不适用或需调整的场景
-
-- Lead Gen、本地服务、App 下载等非电商目标
-- 极高客单价且转化周期很长的产品
-- 合规限制较强的行业，如金融、医疗、成人、政治等
-- Pixel/CAPI 数据严重缺失，且无法修复的账户
-
-这些场景仍可以借鉴“结构简化、信号集中、素材多样化”的原则，但不能直接套用电商预算比例。
-
-## 核心判断标准
-
-| 问题 | 判断方式 |
+| 模块 | 我主要看什么 |
 |---|---|
-| 要不要拆 campaign？ | 只有当产品、国家、语言、offer、毛利或投放目标明显不同，并且预算足够时才拆 |
-| 要不要开再营销？ | 有足够站点访问、ATC、IC 或高客单决策周期时再开 |
-| 素材是否可以迁移到放量 campaign？ | CPA、ROAS 或 Purchase 稳定优于账户基准，且不是只靠少量偶然转化 |
-| 是否需要降预算？ | 连续 3-5 天 CPA 明显高于目标，且不是归因延迟或短期波动 |
-| 是否是素材疲劳？ | Frequency 上升、CTR 下降、CPA 上升，并且没有新的受众口袋被打开 |
+| Pixel | PageView、ViewContent、AddToCart、InitiateCheckout、Purchase 是否正常触发 |
+| CAPI | 是否有服务端事件，Pixel 与 CAPI 是否正常去重 |
+| Domain | 域名是否验证，Purchase 是否是核心优化事件 |
+| Catalog | 商品 ID、价格、库存、图片、链接是否正常 |
+| UTM | Meta、GA4、Shopify 后台能不能对上 campaign 和 ad |
+| 落地页 | 移动端加载、加购、结账、支付、运费、退换政策是否清楚 |
 
-## 项目价值
+这一步看起来不性感，但它决定了后面所有判断是否可信。
 
-这份作品集展示的不只是“我知道 Meta Ads 怎么建 campaign”，而是：
+### 2. 当前预算能不能支撑结构
 
-- 能把官方建议翻译成实际账户结构；
-- 能区分冷启动、增长期、成熟期的不同动作；
-- 能围绕 GMV、ROAS、CPA 和素材生命周期搭建投放系统；
-- 能把经验沉淀成模板、检查清单和可执行 SOP。
+很多账户的问题不是 campaign 太少，而是 campaign 太多。
 
-## 更新时间
+如果一个账户日预算只有 100 美元，却拆成 5 个 campaign、20 个 ad set，那每个 ad set 实际拿到的学习机会很有限。最后每个广告组都在学习阶段里摇摆，CPA 和 ROAS 自然不稳定。
 
-2026-06-24
+我会用一个很简单的判断：
+
+> 每一个被拆出来的 ad set，是否有机会在一周内拿到足够多的优化事件？
+
+如果没有，就不应该拆那么细。
+
+预算不够时，Broad + 少量 campaign 往往比复杂兴趣分层更稳定。兴趣、Lookalike、再营销不是不能用，而是不能在信号还很薄的时候成为主结构。
+
+### 3. 素材是不是在测试“不同理由”
+
+现在的 Meta Ads 越来越不适合只靠受众工程找人。
+
+更现实的情况是：素材本身就在帮系统判断应该把广告推给谁。不同 hook、不同场景、不同人物、不同痛点、不同证明方式，会吸引不同的人群口袋。
+
+所以我看素材测试时，不会只看“上了多少条素材”，而是看这些素材有没有真的不同。
+
+| 素材角度 | 我想验证的问题 |
+|---|---|
+| 痛点解决 | 用户是不是真的在意这个问题 |
+| 产品演示 | 用户能不能快速理解产品怎么用 |
+| 社会证明 | 评论、达人、UGC 能不能降低信任成本 |
+| Offer 驱动 | 折扣、套装、免邮是否能推动下单 |
+| 场景人群 | 哪类生活场景或使用人群更容易买 |
+
+如果 20 条素材只是同一个脚本换字幕、换封面、换剪辑节奏，我不会把它当成 20 个有效测试。
+
+真正有价值的是概念差异，而不是数量堆叠。
+
+### 4. 测试和放量有没有分工
+
+当账户开始有素材出单后，最容易出现的问题是：所有素材都塞进同一个 campaign。
+
+这样做短期省事，但长期会让测试和放量互相影响。
+
+老素材有历史数据优势，系统会更愿意把钱花给它们。新素材如果一开始拿不到足够曝光，很容易被误判为“不行”。反过来，如果大量新素材直接进入主力 campaign，也可能影响原本稳定的 CPA 和 ROAS。
+
+所以当账户有初步 winner 后，我会把结构拆成两个角色：
+
+| Campaign | 它的工作 |
+|---|---|
+| Evergreen Scale | 放已经验证过的素材，追求稳定 GMV、ROAS、CPA |
+| Creative Testing | 测新角度、新达人、新视频、新图片，给主力 campaign 输送 winner |
+
+这个拆分不是为了看起来专业，而是为了让每个 campaign 的任务更清楚。
+
+主力 campaign 负责赚钱，测试 campaign 负责发现下一批能赚钱的素材。
+
+### 5. 数据口径有没有回到真实业务
+
+Meta 后台 ROAS 只是一个视角，不是最终答案。
+
+尤其是再营销、老客复购、归因窗口、浏览型转化、跨设备回传都会影响 Meta 报告。一个 campaign 看起来 ROAS 很高，不代表它一定带来了足够多的新客和增量。
+
+我会同时看：
+
+- Meta 后台 Purchase、CPA、ROAS；
+- Shopify 后台 GMV、订单数、AOV；
+- GA4 的 source / medium、campaign、landing page；
+- 新客占比和复购占比；
+- 商品毛利和折扣后利润；
+- 广告花费占比和现金流压力。
+
+如果这些数据互相解释不了，我不会直接说某个结构成功。
+
+* * *
+
+## 从零冷启动，我会怎么搭
+
+### 阶段 0：先把投放环境检查完
+
+冷启动不是从创建 campaign 开始，而是从确认“系统能不能学到正确数据”开始。
+
+我会先完成这些检查：
+
+| 检查项 | 判断标准 |
+|---|---|
+| BM / 广告账户 | 权限完整，支付正常，没有明显风控 |
+| Pixel | 关键事件在 Events Manager 里能看到 |
+| CAPI | 有服务端事件，去重正常 |
+| Domain | 已验证，核心转化事件设置清楚 |
+| Catalog | 商品可投放，价格、库存、链接正常 |
+| UTM | 不丢参数，不重复，不破坏原 URL |
+| 落地页 | 移动端能顺利完成浏览、加购、结账 |
+
+如果这一步没过，我不会急着放量。因为后面看到的 CPA、ROAS、CVR 都可能是脏数据。
+
+### 阶段 1：只用一个简单结构拿第一批信号
+
+新账户第一轮，我通常不会拆复杂漏斗。
+
+推荐结构是：
+
+| 层级 | 设置 |
+|---|---|
+| Campaign | Sales |
+| Budget | CBO 或 Advantage+ Sales |
+| Ad set | 1 个 Broad ad set |
+| Optimization | Purchase 优先 |
+| Placements | Advantage+ placements |
+| Ads | 6-10 条差异化素材 |
+
+这里的重点是控制变量。
+
+我想先知道：产品、价格、落地页和素材角度有没有基本转化能力。这个阶段如果拆太多受众，反而不容易判断到底是素材问题、价格问题、页面问题，还是受众拆分导致学习不足。
+
+我会至少观察 3-7 天，不会每天改预算、改受众、换素材。冷启动阶段最怕的是系统刚开始学习，就被频繁编辑打断。
+
+### 阶段 2：用数据判断第一批素材
+
+第一轮跑起来后，我不会只看 ROAS。
+
+不同数据组合代表不同问题：
+
+| 表现 | 我会优先怀疑 |
+|---|---|
+| CTR 低，CPM 正常 | 素材 hook 不够强，用户没有停下来 |
+| CTR 高，CVR 低 | 广告承诺和落地页承接可能断裂 |
+| ATC 高，Purchase 低 | 价格、运费、支付、退换、信任可能有问题 |
+| CPM 高，CTR 低 | 素材竞争力弱，或者投放国家/品类竞争高 |
+| 有 Purchase，但 CPA 波动大 | 样本还少，需要继续观察 |
+| 完全没有 ATC / IC / Purchase | 素材、产品、页面或价格至少有一环要重看 |
+
+这个阶段的输出不是“这个 campaign 好不好”，而是第一批判断：
+
+- 哪些角度值得继续；
+- 哪些素材可以淘汰；
+- 哪些问题可能不在广告，而在页面或 offer；
+- 是否已经有素材可以进入放量结构。
+
+### 阶段 3：出现 winner 后，再拆测试和放量
+
+当账户里有 2-5 条素材已经跑出相对稳定的 Purchase、CPA 或 ROAS，我会开始拆结构。
+
+不是为了复杂，而是为了分工。
+
+| Campaign | 配置 |
+|---|---|
+| Evergreen Scale | Advantage+ Sales / ASC / Sales CBO，放已验证 winner |
+| Creative Testing | Sales CBO 或 ABO，Broad，持续上新素材 |
+
+预算可以先按 70/30 或 60/40 分：
+
+- 主力放量：60%-70%；
+- 素材测试：30%-40%；
+- 再营销先不急，除非站点流量和 ATC/IC 已经足够。
+
+这里我会特别注意一点：测试 campaign 不应该变成“垃圾桶”。它不是把所有没想清楚的素材都丢进去，而是有节奏地测试不同概念。
+
+### 阶段 4：进入成熟结构
+
+当账户 Purchase 更稳定、素材生产节奏也稳定后，结构可以进一步沉淀成：
+
+| Campaign | 预算占比 | 使用方式 |
+|---|---:|---|
+| ASC / Advantage+ Sales Scale | 50%-70% | 放已验证素材，追求 GMV、ROAS、CPA 稳定 |
+| Creative Testing | 20%-30% | 每周测试新概念，筛选下一批 winner |
+| Retargeting / DPA | 0%-10% | 站点流量足够时承接高意向人群 |
+| Seasonal / Promo | 单独预算 | 大促、节日、清仓、上新，不污染 evergreen 数据 |
+
+我不会为了“完整漏斗”强行开再营销。
+
+如果站点访问量、加购量、发起结账量都很少，再营销 campaign 很容易只是抢主力 campaign 本来也会拿到的转化，看起来 ROAS 高，但对账户增量帮助有限。
+
+* * *
+
+## 我会如何判断要不要拆 campaign
+
+拆 campaign 之前，我会先问：拆完以后，信号会更清楚，还是更分散？
+
+### 可以考虑拆的情况
+
+| 拆分方式 | 适合情况 |
+|---|---|
+| 按国家拆 | 语言、价格、购买力、履约、时区差异明显 |
+| 按产品拆 | 产品线、客单价、毛利、落地页和受众动机差异明显 |
+| 按 offer 拆 | 折扣、套装、免邮、赠品是独立策略 |
+| 按大促拆 | 大促素材和预算节奏会明显干扰常规 campaign |
+
+### 不建议拆的情况
+
+| 拆分原因 | 为什么不建议 |
+|---|---|
+| 只是为了看不同兴趣表现 | 容易把预算和学习事件切碎 |
+| 每个 ad set 预算都很小 | 学习不足，数据波动大 |
+| 同一产品同一 offer 拆太多 campaign | campaign 之间互相抢量 |
+| 再营销人群很小还单独开预算 | 可能只是制造漂亮但虚高的 ROAS |
+
+我的原则是：
+
+> 每一个被拆出来的 campaign，都必须有一句话能说明它的工作。
+
+如果说不清楚，它大概率不应该存在。
+
+* * *
+
+## 素材测试，我会怎么记录
+
+Meta Ads 到后面拼的不是谁会多建几个 campaign，而是谁能持续生产和识别有效素材。
+
+所以我会给每条素材记录这些字段：
+
+| 字段 | 用途 |
+|---|---|
+| Creative ID | 避免素材混乱，方便复盘 |
+| 角度 | 痛点、演示、证明、offer、场景等 |
+| Hook | 前 3 秒或首屏吸引点 |
+| 素材形式 | UGC、静态图、短视频、轮播、DPA |
+| Landing Page | 判断页面承接是否一致 |
+| Spend | 是否达到判断门槛 |
+| CTR / CPC / CPM | 判断素材吸引力和竞争成本 |
+| ATC / IC / Purchase | 判断用户是否继续行动 |
+| CPA / ROAS | 判断是否接近业务目标 |
+| 结论 | Winner / Watch / Kill / Need LP Check |
+
+我不喜欢只写“这个素材效果不错”。更有用的结论应该是：
+
+> UGC 痛点角度在美国 Broad 里 CPA 低于账户均值 22%，但主要转化集中在移动端，下一轮可以保留同一痛点，测试不同开头和更直接的 offer。
+
+这样的记录才会变成经验，而不是一次性投放结果。
+
+* * *
+
+## 放量时，我会怎么控制节奏
+
+放量不是把预算一下翻倍。
+
+如果一个 campaign 刚稳定，就突然大幅加预算，系统可能重新进入波动。尤其是账户还没形成足够素材池时，预算加得太快，会把少数 winner 更快推向疲劳。
+
+我通常会更偏向：
+
+- 每 3-4 天加一次预算；
+- 单次加 15%-30%；
+- 素材池不足时，先补测试，不急着硬加预算；
+- 大促单独建 campaign，不把 evergreen 改得太重；
+- 老素材还在稳定出单时，不轻易暂停；
+- 新素材先在测试 campaign 里验证，再迁移到主力 campaign。
+
+### 暂停或调整规则
+
+| 情况 | 动作 |
+|---|---|
+| 单素材花费达到 2 倍目标 CPA，完全无有效行为 | 暂停或换角度 |
+| 有 ATC / IC 但无 Purchase | 检查价格、运费、结账、信任背书 |
+| Campaign 连续 3-5 天 CPA 高于目标 30%+ | 降预算或回滚最近改动 |
+| Frequency 上升、CTR 下降、CPA 上升 | 标记素材疲劳，准备上新 |
+| ROAS 下降但 AOV 上升 | 结合毛利、GMV 和回收周期判断 |
+
+这里最重要的是不要情绪化操作。
+
+Meta Ads 的波动很正常，但持续亏损、追踪异常、页面承接断裂和素材疲劳，需要分开判断。
+
+* * *
+
+## 常见错误
+
+### 1. 冷启动就搭复杂漏斗
+
+新账户没有足够 Purchase 时，复杂漏斗通常不会让账户更高级，只会让数据更碎。
+
+### 2. 过度依赖兴趣和 Lookalike
+
+兴趣和 Lookalike 不是不能用，但它们不应该替代素材和信号。现在很多时候，素材角度本身就是更重要的“定向语言”。
+
+### 3. 用再营销 ROAS 掩盖新客不足
+
+再营销 campaign 很容易看起来漂亮，但如果新客增长不足，账户并没有真正规模化。
+
+### 4. 把素材测试做成数量堆叠
+
+同一个视频换 10 个字幕，不等于 10 个概念。真正要测试的是不同购买理由。
+
+### 5. 每天改设置
+
+频繁改预算、受众、素材，会让系统很难稳定学习。很多时候不是结构不行，而是还没等数据稳定就被改掉了。
+
+* * *
+
+## 这个方法论最后会落成什么
+
+我会把 Meta Ads 账户看成一个持续学习系统，而不是一组固定设置。
+
+这个系统里有三件事必须同时存在：
+
+1. 清晰结构：主力放量、素材测试、必要的再营销和大促互不混乱；
+2. 稳定信号：Pixel、CAPI、Purchase、UTM、Shopify/GA4 数据能互相解释；
+3. 素材飞轮：每周都有新概念进入测试，有 winner 迁移到放量，有疲劳素材被替换。
+
+如果这三件事同时成立，账户才有机会从冷启动走到稳定放量。
+
+如果只做结构简化，但没有素材多样化，账户会很快吃完现有受众。
+
+如果只做素材测试，但信号和预算被切碎，系统也很难判断谁是真 winner。
+
+如果只看 Meta ROAS，不看真实订单、毛利和新客，可能会把一个看起来漂亮的账户误判成健康账户。
+
+所以这套经验的核心不是“照抄一个账户结构”，而是建立一套判断方法：
+
+> 什么时候该集中，什么时候该拆分，什么时候该测试，什么时候该放量，什么时候该停下来先修追踪、页面或 offer。
+
+* * *
+
+## 仓库里的模板
+
+这个仓库也保留了几个可复用模板：
+
+- `templates/cold-start-checklist.md`：冷启动上线前检查清单；
+- `templates/account-structure-canvas.md`：账户结构梳理画布；
+- `templates/creative-testing-tracker.csv`：素材测试记录模板；
+- `docs/sources.md`：参考来源。
+
+* * *
+
+## 参考来源
+
+- Meta Blueprint：Performance 5。https://www.facebookblueprint.com/student/path/253157-performance-5
+- Meta Business Help：Advantage+ campaign budget。https://www.facebook.com/business/help/153514848493595
+- Meta Business Help：Learning phase。https://www.facebook.com/business/help/112167992830700
+- Meta Business Help：Advantage+ Audience。https://www.facebook.com/business/help/273363992030035
+- Meta Engineering：Meta Andromeda。https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/
+- 27Five：Meta Ads Campaign Structure for eCommerce: What Works in 2026。https://27five.com/blog/meta-ads-campaign-structure-ecommerce/
+- Flighted：The Best Meta Ads Account Structure In 2026。https://www.flighted.co/blog/best-meta-ads-account-structure-2026
+- Motion：The ultimate guide to Facebook ad creative testing in 2025。https://motionapp.com/blog/ultimate-guide-creative-testing-2025
+- Common Thread Collective：How to Scale Ecommerce Facebook Ads。https://commonthreadco.com/blogs/coachs-corner/facebook-ads-shopify-ecommerce
+- GrowthMarketer：Meta Ads: Diversity, Density, Structure。https://growthmarketer.com/blog/meta-ads-performance-system/
 
