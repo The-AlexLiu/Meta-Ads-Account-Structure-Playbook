@@ -51,3 +51,13 @@
 | CPM 高、CTR 低 | 重做 hook 或素材角度 |
 | 老素材 Frequency 上升且 CPA 恶化 | 标记疲劳，准备替换 |
 
+## 6. 受众策略检查
+
+| 受众项 | 当前设置 | 判断 |
+|---|---|---|
+| 主力放量受众 |  | 是否以 Broad / Advantage+ Audience 为主 |
+| Audience controls |  | 地区、语言、最低年龄、必要排除是否清楚 |
+| Audience suggestions |  | 兴趣、Lookalike、Custom Audience 是否只是辅助信号 |
+| Retargeting |  | 流量池是否足够，是否有频次和增量判断 |
+| Exclusions |  | 是否排除了不该投的人，又没有过度排除 |
+| Audience split |  | 是否因为拆受众导致预算和学习事件被切碎 |

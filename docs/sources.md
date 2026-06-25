@@ -16,6 +16,12 @@
 - Meta Business Help：Advantage+ Audience，说明 Advantage+ audience 的使用方向。  
   https://www.facebook.com/business/help/273363992030035
 
+- Meta Business Help：Audience controls and audience suggestions in Advantage+ audience，说明 controls 和 suggestions 的区别。  
+  https://www.facebook.com/business/help/938372127764391
+
+- Meta Business Help：Advantage+ detailed targeting，说明系统可能扩展到详细定向之外的人群。  
+  https://www.facebook.com/business/help/128066880933676
+
 - Meta Engineering：Meta Andromeda，解释新一代广告检索系统和更高模型容量。  
   https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/
 
@@ -46,4 +52,3 @@
 - Pixel/CAPI 数据质量；
 - 国家、语言、履约和价格差异；
 - 素材生产能力。
-

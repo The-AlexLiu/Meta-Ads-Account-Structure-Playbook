@@ -64,8 +64,18 @@ utm_source=facebook&utm_medium=cpm&utm_campaign={{campaign.name}}&utm_content={{
 | Objective | Sales |
 | Optimization | Purchase 优先 |
 | Budget | 日预算至少接近目标 CPA 的 3-5 倍 |
-| Audience | Broad，只限制国家、语言、合规年龄 |
+| Audience controls | 只限制国家、语言、合规年龄和必要排除 |
+| Audience suggestions | 兴趣、Lookalike、Custom Audience 可选；没有把握时先不加 |
 | Placements | Advantage+ placements |
 | Ads | 6-10 条不同角度素材 |
 | 判断周期 | 3-7 天，不频繁编辑 |
 
+## 6. 受众检查
+
+| 检查项 | 状态 | 备注 |
+|---|---|---|
+| 地区、语言、年龄设置符合业务和合规要求 | 待检查 |  |
+| 没有把小预算拆进过多兴趣或 Lookalike ad set | 待检查 |  |
+| Purchaser / 内部人员 / 测试用户排除逻辑清楚 | 待检查 |  |
+| 再营销人群足够大才单独开 campaign | 待检查 |  |
+| 能区分 audience controls 和 audience suggestions | 待检查 |  |

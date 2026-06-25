@@ -40,6 +40,23 @@
 
 这套结构的重点不是“少”，而是每个 campaign 都必须有明确工作。
 
+## 2.1. 受众的角色也变了
+
+现在我不会再把 Meta Ads 的受众策略理解成“找到一个最精准兴趣包”。
+
+受众仍然重要，但它更多承担四个角色：
+
+| 角色 | 说明 |
+|---|---|
+| 边界 | 地区、语言、合规年龄、自定义受众排除 |
+| 提示 | 兴趣、Lookalike、Custom Audience 作为系统起点 |
+| 诊断 | 判断某类场景、人群或购买理由是否有反应 |
+| 承接 | 访客、ATC、IC、Engagers 等高意向再营销 |
+
+在 Advantage+ Audience 的语境里，很多输入是 suggestions，不是硬定向。也就是说，兴趣、Lookalike 或 Custom Audience 不一定会把广告严格限制在那群人里。真正更像硬边界的是 location、minimum age、language 和 custom audience exclusions 这类 controls。
+
+所以我会把主力放量放在 Broad / Advantage+ Audience 上，把兴趣、Lookalike 和 Custom Audience 当作启动信号、诊断工具和排除规则，而不是把它们拆成一堆长期主力 ad set。
+
 ## 3. 冷启动前，先把信号打通
 
 新账户最常见的问题，是还没有确认追踪和站点成交链路，就急着开始测试素材。
@@ -166,4 +183,3 @@
 - Meta、GA4、Shopify 数据口径说明。
 
 这套方法论的重点不是背设置，而是建立一个能持续学习、持续测试、持续放量的广告系统。
-
