@@ -1,5 +1,5 @@
 creative_id,launch_date,campaign,ad_set,ad_name,creative_angle,format,hook,offer,landing_page,spend,impressions,clicks,ctr,cpc,cpm,add_to_cart,initiate_checkout,purchase,revenue,cpa,roas,cvr,frequency,status,decision_note
-META_202606_W26_UGC01,2026-06-24,Creative Testing,Broad,UGC Pain Point 01,痛点解决,UGC Video,3 秒内展示问题场景,10% off,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
-META_202606_W26_DEMO01,2026-06-24,Creative Testing,Broad,Product Demo 01,产品演示,Short Video,直接展示使用前后对比,Bundle,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
-META_202606_W26_PROOF01,2026-06-24,Creative Testing,Broad,Review Proof 01,社会证明,Static,评论截图加产品画面,Free shipping,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
+META_SAMPLE_W01_UGC01,2024-01-08,Creative Testing,Broad,UGC Pain Point 01,痛点解决,UGC Video,3 秒内展示问题场景,10% off,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
+META_SAMPLE_W01_DEMO01,2024-01-08,Creative Testing,Broad,Product Demo 01,产品演示,Short Video,直接展示使用前后对比,Bundle,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
+META_SAMPLE_W01_PROOF01,2024-01-08,Creative Testing,Broad,Review Proof 01,社会证明,Static,评论截图加产品画面,Free shipping,https://example.com/products/product-a,0,0,0,,,,0,0,0,0,,,,,Watch,
 

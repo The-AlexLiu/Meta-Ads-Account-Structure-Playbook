@@ -27,10 +27,10 @@
 
 ## 行业实操资料
 
-- 27Five：Meta Ads Campaign Structure for eCommerce: What Works in 2026。  
+- 27Five：Meta Ads Campaign Structure for eCommerce: What Works。  
   https://27five.com/blog/meta-ads-campaign-structure-ecommerce/
 
-- Flighted：The Best Meta Ads Account Structure In 2026。  
+- Flighted：The Best Meta Ads Account Structure。  
   https://www.flighted.co/blog/best-meta-ads-account-structure-2026
 
 - Motion：The ultimate guide to Facebook ad creative testing in 2025。  

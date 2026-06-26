@@ -1,4 +1,4 @@
-# Meta Ads Account Structure Playbook 2026
+# Meta Ads Account Structure Playbook
 
 Meta Ads 电商账户结构：从冷启动到稳定放量的经验沉淀
 
@@ -10,7 +10,7 @@ Meta Ads 电商账户结构：从冷启动到稳定放量的经验沉淀
 
 > 这个账户有没有给 Meta 足够清晰、足够集中的学习信号？
 
-如果一个账户预算本来就不大，却拆了十几个 campaign、几十个 ad set，每个广告组都拿不到足够 Purchase，系统就很难稳定学习。最后看起来像是“素材不行”“受众不准”“Meta 抽风”，但底层问题可能只是结构把信号切碎了。
+如果一个账户预算本来就不大，却拆了十几个 campaign、几十个 ad set，每个广告组都拿不到足够 Purchase，系统就很难稳定学习。最后看起来像是“素材不行”“受众不准”“平台波动”，但底层问题可能只是结构把信号切碎了。
 
 所以我现在看 Meta Ads 结构，不会先问“这个账户有没有完整漏斗”，而是先看：
 
@@ -109,15 +109,15 @@ Meta 现在的受众逻辑和早期 Facebook Ads 已经不一样了。
 | 受众类型 | 我会怎么用 | 不会怎么用 |
 |---|---|---|
 | Broad / Advantage+ Audience | 默认放量基础，让系统用素材和转化信号找人 | 不会在冷启动小预算时再拆很多兴趣 ad set |
-| Interest / Detailed targeting | 小预算诊断某些方向是否有需求，比如礼物、人群、场景 | 不会把兴趣当成长期主结构 |
-| Lookalike | 有高质量 Purchaser / 高 LTV seed 时，作为冷启动或扩量提示 | 不会以为 Lookalike 一定能严格圈住相似人群 |
+| Interest / Detailed targeting | 小预算诊断某些方向是否有需求，比如礼物、人群、场景 | 不会在没有明确假设时大量堆兴趣 |
+| Lookalike | 有高质量 Purchaser / 高 LTV seed 时，作为冷启动或扩量提示 | 不会把低质量 seed 的 Lookalike 当成精准人群 |
 | Custom Audience | 用于排除、再营销、老客分析、作为系统提示 | 不会用很小的人群单独开大预算 |
 | Retargeting | 流量、ATC、IC 足够时承接高意向 | 不会用再营销 ROAS 掩盖新客不足 |
 
 我会特别注意三个风险：
 
 1. 受众拆太细，学习事件被切碎。
-2. 兴趣和 Lookalike 看起来很专业，但实际只是给系统增加噪音。
+2. 兴趣和 Lookalike 看起来很专业，但如果 seed 质量差或拆分过细，反而会让学习信号变弱。
 3. 再营销和老客过多，会让 ROAS 看起来很好，但新客增长不足。
 
 所以受众策略的底层原则是：

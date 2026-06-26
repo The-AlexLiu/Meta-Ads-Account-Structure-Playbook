@@ -1,6 +1,6 @@
-# 从零冷启动到最佳结构：Meta Ads 电商账户搭建方法论
+# 从零冷启动到稳定结构：Meta Ads 电商账户搭建方法
 
-## 1. 先重新理解“最佳结构”
+## 1. 先重新理解“账户结构”
 
 讨论 Meta Ads 结构时，最容易陷入一个误区：把结构理解成 campaign、ad set 和 audience 的排列组合。
 
@@ -19,11 +19,11 @@
 
 如果预算被拆进十几个 campaign，Purchase 分散在几十个 ad set 里，每个广告组都拿不到足够转化，Meta 很难稳定学习。即使受众拆得再精细，账户也可能长期停留在学习阶段，表现忽上忽下。
 
-所以我理解的“最佳结构”，不是最复杂的结构，而是最能帮助系统学习的结构。
+所以我理解的“稳定结构”，不是最复杂的结构，而是最能帮助系统学习的结构。
 
 ## 2. 当前更接近共识的方向
 
-结合 Meta 官方 Performance 5、Advantage+ 自动化产品，以及行业投手在 2025-2026 年的实操反馈，当前方向可以概括成五句话：
+结合 Meta 官方 Performance 5、Advantage+ 自动化产品，以及行业投手在近年实操反馈，当前方向可以概括成五句话：
 
 1. 账户结构要简化，不要把预算和事件切碎。
 2. 自动化能力要用起来，包括 Advantage+ campaign budget、Advantage+ placements、Advantage+ Audience 或 Advantage+ Sales。
